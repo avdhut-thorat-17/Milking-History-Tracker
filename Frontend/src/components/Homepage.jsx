@@ -12,7 +12,7 @@ const HomePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/add-record', { date, shift, litres });
+      await axios.post('https://milking-history-tracker-backend.onrender.com/api/add-record', { date, shift, litres });
       alert('Record added successfully');
       setDate('');
       setShift('');

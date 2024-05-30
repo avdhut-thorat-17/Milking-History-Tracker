@@ -8,7 +8,7 @@ const History = () => {
   useEffect(() => {
     const fetchRecords = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/records');
+        const response = await axios.get('https://milking-history-tracker-backend.onrender.com/api/records');
         setRecords(response.data);
       } catch (error) {
         console.error('Error fetching records:', error);
